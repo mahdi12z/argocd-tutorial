@@ -13,5 +13,12 @@ spec:
           #      include: '{serviceaccount.yml,service.yml}'
           #      recurse: true
     path: v03-argocd-applications/directoryOfmanifests
-    repoURL: https://github.com/devopshobbies/argocd-tutorial.git
+    repoURL: https://github.com/mahdi12z/argocd-tutorial.git
     targetRevision: main
+
+
+
+
+kubectl apply -f application-directory.yml -n argocd
+
+go to web
