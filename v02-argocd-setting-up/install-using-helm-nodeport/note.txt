@@ -11,8 +11,7 @@ helm install argocd argo/argo-cd -n argocd -f values-nodePort.yml
 ##password
 
 
-```bash
 get secret  argocd-initial-admin-secret -n argocd -o yaml
 echo d2FqNGZQUHFyUXVJd2kwMA== | base64 -d
-```
+
 
