@@ -4,7 +4,7 @@ metadata:
   name: application-from-scratch
 spec:
   destination:
-    namespace: default
+    namespace: helm
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -24,3 +24,9 @@ spec:
     path: v03-argocd-applications/helm/nginx
     repoURL: https://github.com/mahdi12z/argocd-tutorial.git
     targetRevision: main
+
+
+kubectl apply -f application-helm.yml -n argocd
+
+ kubectl create namespace helm
+    
